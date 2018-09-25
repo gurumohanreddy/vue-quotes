@@ -1,3 +1,6 @@
 module.exports = {
-    baseUrl: '/vue-quotes'
-}  
+    baseUrl: process.env.NODE_ENV === 'production'
+      ? '/vue-quotes/'
+      : '/'
+  }
+  
